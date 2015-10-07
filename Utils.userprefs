@@ -1,11 +1,20 @@
 ﻿<Properties StartupItem="TestUtils/TestUtils.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Utils/Properties/UselessUtils.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestUtils/Program.cs">
     <Files>
-      <File FileName="TestUtils/Program.cs" Line="16" Column="20" />
-      <File FileName="Utils/UsefulUtils.cs" Line="10" Column="36" />
-      <File FileName="Utils/Properties/UselessUtils.cs" Line="31" Column="5" />
+      <File FileName="TestUtils/Program.cs" Line="15" Column="29" />
+      <File FileName="Utils/UsefulUtils.cs" Line="58" Column="30" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Utils" expanded="True" selected="True">
+            <Node name="TestUtils" expanded="True" />
+            <Node name="Utils" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

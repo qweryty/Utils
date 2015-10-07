@@ -52,6 +52,12 @@ namespace Utils
 				return 1 / Pow (n, -p);
 			}
 		}
+
+		public static T Abs<T>(T variable){
+			dynamic temp = variable;
+			if(temp < 0) return -temp;
+			return temp;
+		}
 	}
 }
 
