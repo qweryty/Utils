@@ -4,6 +4,8 @@ namespace Utils
 {
 	public class UsefulUtils
 	{
+		public static readonly double PI = 3.1415926535;
+
 		public delegate void Solve();
 
 		public static void Repeate(Solve method, 
