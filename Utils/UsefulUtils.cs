@@ -50,8 +50,8 @@ namespace Utils
 
 				double currentPower = n;
 
-				while(p != 0) {
-					if(p % 2 == 1)
+				while (p != 0) {
+					if (p % 2 == 1)
 						a *= currentPower;
 
 					p /= 2;
