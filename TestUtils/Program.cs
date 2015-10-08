@@ -27,7 +27,7 @@ namespace TestUtils
 
 			char c;
 			UsefulUtils.Input (out c, "Введите букву: ");
-			Console.WriteLine (a);
+			Console.WriteLine (c);
 		}
 
 		public static void Main ()
