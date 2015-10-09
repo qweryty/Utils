@@ -44,11 +44,20 @@ namespace Utils
 			return r;
 		}
 
-		public static double Pow(int n, int p){
+		public static double Pow(double n, int p){
 			if (p >= 0) {
 				double a = 1;
-				for (int i = 0; i < p; ++i)
-					a *= p;
+
+				double currentPower = n;
+
+				while (p != 0) {
+					if (p % 2 == 1)
+						a *= currentPower;
+
+					p /= 2;
+					currentPower *= currentPower;
+				}
+
 				return a;
 			} else {
 				return 1 / Pow (n, -p);
