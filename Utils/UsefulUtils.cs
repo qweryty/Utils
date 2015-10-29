@@ -4,6 +4,8 @@ namespace Utils
 {
 	public class UsefulUtils
 	{
+		public static readonly double PI = 3.1415926535;
+
 		public delegate void Solve();
 
 		public static void Repeate(Solve method, 
@@ -46,11 +48,20 @@ namespace Utils
 			return r;
 		}
 
-		public static double Pow(int n, int p){
+		public static double Pow(double n, int p){
 			if (p >= 0) {
 				double a = 1;
-				for (int i = 0; i < p; ++i)
-					a *= p;
+
+				double currentPower = n;
+
+				while (p != 0) {
+					if (p % 2 == 1)
+						a *= currentPower;
+
+					p /= 2;
+					currentPower *= currentPower;
+				}
+
 				return a;
 			} else {
 				return 1 / Pow (n, -p);

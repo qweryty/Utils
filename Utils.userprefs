@@ -2,19 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TestUtils/Program.cs">
     <Files>
-      <File FileName="TestUtils/Program.cs" Line="15" Column="29" />
-      <File FileName="Utils/UsefulUtils.cs" Line="58" Column="30" />
+      <File FileName="TestUtils/Program.cs" Line="15" Column="4" />
+      <File FileName="Utils/UsefulUtils.cs" Line="58" Column="26" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Utils" expanded="True" selected="True">
-            <Node name="TestUtils" expanded="True" />
-            <Node name="Utils" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

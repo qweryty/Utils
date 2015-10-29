@@ -16,10 +16,16 @@ namespace TestUtils
 			Console.WriteLine ("Hello World!");
 			uint a;
 			UsefulUtils.Input (out a, condition: (x => x < 10), wrongInputMessage: "Число введено не правильно, повторите попытку.");
-			Console.WriteLine (UsefulUtils.Abs(a));
+			Console.WriteLine ("Модуль числа: " + UsefulUtils.Abs(a));
+
+			Console.Write("Степени числа от -5 до 10: ");
+			for (int i = -5; i <= 10; i++)
+				Console.Write(UsefulUtils.Pow(a, i) + " ");
+			Console.WriteLine();
+
 			char c;
 			UsefulUtils.Input (out c, "Введите букву: ");
-			Console.WriteLine (a);
+			Console.WriteLine (c);
 		}
 
 		public static void Main ()
