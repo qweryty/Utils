@@ -16,7 +16,7 @@ namespace Utils
 				} while(myinf.Key != ConsoleKey.Escape);
 		}
 
-		public static void Input<T>(out T variable, string text = "Введите число: ", Func<T, bool> condition = null){
+		public static void Input<T>(out T variable, string text = "Введите число: ", Func<T, bool> condition = null, string wrongInputMessage = "Введены некорректные данные"){
 			condition = condition ?? (x => true);
 			while (true) {
 				try{
@@ -26,10 +26,14 @@ namespace Utils
 					if(condition(variable)){
 						break;
 					} else {
-						Console.WriteLine("Введены некорректные данные.");
+						Console.WriteLine(wrongInputMessage);
 					}
 				} catch(FormatException){
 					Console.WriteLine ("Ошибка ввода.");
+				} catch(OverflowException){
+					Console.WriteLine ("Введено значение вне диапазона возможных.");
+				} catch(InvalidCastException){
+					Console.WriteLine("Данный тип не поддерживается.");
 				}
 			}
 		}

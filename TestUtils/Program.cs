@@ -14,8 +14,8 @@ namespace TestUtils
 		public static void Solve (){
 			//UselessUtils.Matrix ();
 			Console.WriteLine ("Hello World!");
-			int a;
-			UsefulUtils.Input (out a, condition: (x => x < 10));
+			uint a;
+			UsefulUtils.Input (out a, condition: (x => x < 10), wrongInputMessage: "Число введено не правильно, повторите попытку.");
 			Console.WriteLine (UsefulUtils.Abs(a));
 			char c;
 			UsefulUtils.Input (out c, "Введите букву: ");
